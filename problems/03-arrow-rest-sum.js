@@ -10,7 +10,27 @@ arrowRestSum(1, 2, 3, 4, 5, 6, 7, 8, 9); // => 14
 arrowRestSum(0); // => 0
 ***********************************************************************/
 
-// your code here!
+// const arrowRestSum = (...num) => {
+//   let total = 0;
+
+
+//   for (let i = 0; i < num; i++) {
+//     total += num[i];
+
+//   }
+//   return total;
+// }
+
+const arrowRestSum = (...num) => {
+  let total = 0;
+
+  num.forEach(ele => {
+    total += ele;
+  });
+  return total;
+}
+
+console.log(arrowRestSum(3,5,6)); // => 14
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
